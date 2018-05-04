@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta name="x5-cache" content="disable">
+    <meta name="keywords" content="Music,vue,vue-music,jsonwu,音乐,H5播放器">
+    <title>Music</title>
+    <link type="text/css" rel="stylesheet" href="./css/app.css">
+</head>
+<body>
+<div id="app">
+    <div class="home-view home-view-demo">
+        <div class="navigator">
+            <div class="logo">
+                <a href="#/" class="router-link-active">
+                    <img src="./img/jfla_logo.png" alt="J.Fla">
+                </a>
+            </div>
+            <div class="tabs">
+                <i></i>
+                <a href="http://www.jflastory.com/luck" class="tab">
+                    <span>Luck</span>
+                </a>
+                <a href="http://www.jsonwu.com/index"
+                   class="tab router-link-exact-active router-link-active"><span>Music</span></a>
+                <span class="langs"><a href="javascript:;">English</a></span>
+            </div>
+            <span class="toggle-nav">
+                <i></i>
+            </span>
+        </div>
+        <div class="router-view">
+            <div class="nav-loading"></div>
+            <div class="home-example">
+                <div class="example-main">
+                    <div class="page-display">
+                        <div class="display-wrapper">
+                            <section class="mofang-demo">
+                                <iframe src="http://www.jsonwu.com/music"
+                                        frameborder="0" width="100%" height="100%" scrolling="no">
+                                </iframe>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="example-desc">
+                        <a href="http://www.jsonwu.com/music" class="online-link">Browse the phone</a>
+                        <img src="data:image/png;base64,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">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
